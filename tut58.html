@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+       time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is tutorial 58");
+        // setTimeout-->allow us to run the function once after the interval of time
+        // clearTimeout--->allow us to run the function repeatdly after the interval of time 
+     function greet(name,byetext){
+        console.log("hello good morning"+name+" "+ byetext);
+
+     }
+    //  timeout=setTimeout(greet,5000,"harry","takecar");
+    //  console.log(timeOut);
+    //  clearTimeout(timeout);
+ //  wrong as it is calling the function inside setTimeout
+//   setInterval(greet,1000,"harry","good Night");
+//  clearInterval(intervalId);
+     function displayTime(){
+      time=new Date();
+      console.log(time);
+      document.getElementById('time').innerHtml=time;
+     }
+     setInterval(displayTime,1000);
+     
+    </script>
+
+    
+</body>
+</html>

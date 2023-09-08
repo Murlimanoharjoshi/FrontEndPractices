@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: aquamarine;
+            /* box-shadow: offset x offset y color; */
+            /* box-shadow: 10px 13px  green; */
+            /* for all directionspread  two are.....radius.......blur radius  */
+            /* box-shadow: -7px -5px 10px 34px green; */
+            box-shadow: inset 3px 5px green;
+            /* box-shadow: 23px 10px green,12px 34px red; */
+        }
+        .card h2{
+            text-shadow: 3px 4px green;
+            text-shadow: 3px 4px 5px green;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card" id="card1">
+        <h2>this is java course</h2>
+        <h2>card1</h2>
+        <p> here java courses are started.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed vero voluptas vel.</p>
+    </div>
+    <div class="card" id="card2">
+        <h2>this is html course</h2>
+        <h2>card2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eius culpa fuga.</p>
+    </div>
+    <div class="card" id="card3">
+        <h2>card3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero illo facilis!</p>
+    </div>
+</div>
+    
+</body>
+</html>

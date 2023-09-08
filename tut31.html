@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors </title>
+</head>
+<style>
+    /* h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    } */
+    /* when div is direct parent of p */
+    /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+    /* if p is right after div i.e p is the next sibling of div */
+    div + p{
+        color: white;
+        background-color: red;
+
+    }
+</style>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">this is another paragraph inside li</li>
+                <li>this wil no effected</li>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer paragraph</p>
+    
+</body>
+</html>

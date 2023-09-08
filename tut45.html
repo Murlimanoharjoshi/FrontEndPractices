@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid and media queries</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+
+
+    }
+
+    @media only screen and (max-width:300px){
+        body{
+            
+            background-color: cyan;
+
+        }
+       
+    }
+    @media only screen and (min-width:300px) and (max-width:500px){
+        body{
+           
+            background-color: rgba(106, 0, 255, 0.742);
+
+        }
+       
+    }
+    @media only screen and (min-width:500px)and (max-width:800px){
+        body{
+           
+            background-color: yellow;
+
+        }
+        .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    }
+    @media only screen and (min-width:800px){
+        body{
+            
+            background-color: green;
+
+        }
+        .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    }
+    aside{
+        display: none;
+    }
+    }
+    .bdr{
+        border: 2px solid red;
+        padding: 23px;
+        background-color: wheat;
+
+    }
+    nav{
+        grid-area: navbar;
+
+    } 
+    section{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area:footer;
+        text-align: center;
+    }
+
+    
+
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span>about</span>
+            <span>services</span>
+            <span>contact</span>
+        </nav>
+        <section class="bdr">
+            learn css in hindi
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright code with harry 2022</footer>
+    
+</body>
+</html>

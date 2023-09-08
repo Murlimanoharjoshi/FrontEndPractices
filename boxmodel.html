@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodel</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(55, 255, 0);
+            border: 32px solid rgb(23, 41, 200);
+            /* we can set padding/margin in right ,left,top,bottom like this 
+            padding-top: 79px ;
+            padding-left: 79;*/
+            padding: 23px 56px 6 px 78px;
+            /* padding/margin:top right bottom left */
+           /* padding: 34px 19px;
+            padding y(top/bottom)x(left/right) */
+
+            margin: 34px 19px;
+            border-radius: 24ppx;
+            width: 30px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="firstpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse rerum sit, minima obcaecati molestias sapiente magni et incidunt, laudantium, molestiae ipsum voluptates asperiores fugiat praesentium voluptate saepe nisi voluptas vel?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="secondpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse rerum sit, minima obcaecati molestias sapiente magni et incidunt, laudantium, molestiae ipsum voluptates asperiores fugiat praesentium voluptate saepe nisi voluptas vel?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="thirdpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse rerum sit, minima obcaecati molestias sapiente magni et incidunt, laudantium, molestiae ipsum voluptates asperiores fugiat praesentium voluptate saepe nisi voluptas vel?</p>
+
+    </div>
+    
+</body>
+</html>
